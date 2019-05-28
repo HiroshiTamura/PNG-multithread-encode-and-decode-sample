@@ -18,6 +18,16 @@
 #pragma comment( lib ,"libpng16.lib")
 #pragma comment( lib ,"zdll.lib")
 
+
+typedef struct _tagDIBSECT {
+	HBITMAP ddb;
+	HDC hdc;
+	LPDWORD pixel;
+	BITMAPINFO info;
+	RGBQUAD bmiColors[255];
+} DIBSECT;
+
+
 #ifdef __cplusplus
 extern "C"{
 #endif
